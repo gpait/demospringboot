@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: user6SM
+    password: 3ePBc5XdATDxUpmU
+    url: jdbc:postgresql://postgresql:5432/sampledb
+
+  jpa:
+    hibernate:
+      # don't use it on production, probably you will use 'validate'
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        # otherwise: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+        jdbc.lob.non_contextual_creation: true
+
+    show-sql: true
+
