@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-    @Value("${greeting.message:Hello World}")
+    @Value("${greeting.message:Hello}")
     private String message;
 
     @Value("${greeting.secret:Unknown}")

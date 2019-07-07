@@ -19,7 +19,7 @@ public class GreetingController {
         return this.discoveryClient.getServices();
     }
 
-    @Value("${greeting.message:Hello World}")
+    @Value("${greeting.message:Hello}")
     private String message;
 
     @Value("${greeting.secret:Unknown}")
