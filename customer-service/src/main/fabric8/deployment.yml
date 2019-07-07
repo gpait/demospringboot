@@ -18,3 +18,13 @@ spec:
             secretKeyRef:
               name: openshift-spring-boot-demo-secret
               key: jwt.secret
+        - name: SPRING_DATASOURCE_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: openshift-spring-boot-demo-secret
+              key: spring.datasource.username
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: openshift-spring-boot-demo-secret
+              key: spring.datasource.password

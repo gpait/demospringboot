@@ -13,7 +13,9 @@ oc get configmap openshift-spring-boot-demo-config-map -o yaml
 ```bash
 oc create secret generic openshift-spring-boot-demo-secret \
     --from-literal=greeting.secret="H3ll0" \
-    --from-literal=jwt.secret="demo"
+    --from-literal=jwt.secret="demo" \
+    --from-literal=spring.datasource.username="userT0G" \
+    --from-literal=spring.datasource.password="MMkglTP6tRe5mJL0"
 ```
 
 ```bash
