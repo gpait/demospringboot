@@ -1,1 +1,1 @@
-spring.cloud.kubernetes.config.name: spring-boot-config
+spring.cloud.kubernetes.config.name: customer-config
