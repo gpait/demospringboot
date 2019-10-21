@@ -15,7 +15,7 @@ spec:
               key: greeting.secret
         - name: JWT_SECRET
           valueFrom:
-            secretKeyRef:
+            secretKeyReopenshift-spring-boot-demo-secretf:
               name: openshift-spring-boot-demo-secret
               key: jwt.secret
         - name: SPRING_DATASOURCE_USERNAME

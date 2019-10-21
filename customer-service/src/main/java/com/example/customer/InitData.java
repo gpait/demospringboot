@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-@Profile(value = "local")
+@Profile(value = "default")
 public class InitData implements CommandLineRunner {
 
     private final CustomerRepository customerRepository;

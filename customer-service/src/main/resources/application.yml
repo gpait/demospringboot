@@ -3,10 +3,18 @@ spring:
     name: customer-service
 
 management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
   endpoints:
     web:
       exposure.include: '*'
   endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled:true
     health:
       show-details: ALWAYS
   info:
@@ -14,3 +22,6 @@ management:
       mode: full
 
 customer.info: Property value backed into the image
+
+jwt.secret: demo
+
