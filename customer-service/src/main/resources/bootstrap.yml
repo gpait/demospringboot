@@ -1,1 +1,1 @@
-spring.cloud.kubernetes.config.name: openshift-spring-boot-demo-config-map
+spring.cloud.kubernetes.config.name: spring-boot-config

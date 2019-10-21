@@ -1,7 +1,8 @@
 spring:
   application:
-    name: customer-service
-
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}/${MONGO_DATABASE}
 management:
   metrics:
     export:
